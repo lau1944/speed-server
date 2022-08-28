@@ -4,7 +4,7 @@ const port = process.env.PORT || 8080;
 const app = express();
 
 app.get('/download', (req, res) => {
-  const file = `${__dirname}/10M.iso`;
+  const file = `${__dirname}/1M.iso`;
   res.download(file); 
 });
 
